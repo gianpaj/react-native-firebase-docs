@@ -71,7 +71,7 @@ A notification will trigger one of two listeners depending on the state of your 
 import type { Notification } from 'react-native-firebase';
 
 componentDidMount() {
-    this.notificationDisplayedListener = firebase.notifications().onNotificationDisplayed(notification: Notification => {
+    this.notificationDisplayedListener = firebase.notifications().onNotificationDisplayed((notification: Notification) => {
         // Process your notification as required
     });
     this.notificationListener = firebase.notifications().onNotification(notification: Notification => {
